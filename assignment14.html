@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 14 - Nested and Responsive Tables</title>
+  <style>
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #777; padding: 6px 10px; }
+    .table-wrap { overflow-x: auto; max-width: 100%; }
+  </style>
+</head>
+<body>
+  <h2>Nested Table</h2>
+  <table>
+    <tr><th>Student</th><th>Marks Details</th></tr>
+    <tr>
+      <td>Aman</td>
+      <td>
+        <table>
+          <tr><th>Subject</th><th>Marks</th></tr>
+          <tr><td>HTML</td><td>85</td></tr>
+          <tr><td>CSS</td><td>90</td></tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+  <h2>Responsive (scrollable) Table</h2>
+  <div class="table-wrap">
+    <table style="min-width:900px">
+      <tr><th>ID</th><th>Name</th><th>Email</th><th>Phone</th><th>City</th><th>Course</th><th>Year</th><th>Fees</th></tr>
+      <tr><td>1</td><td>Aman</td><td>aman@example.com</td><td>9876543210</td><td>Agra</td><td>B.Tech CSE</td><td>2026</td><td>90,000</td></tr>
+      <tr><td>2</td><td>Riya</td><td>riya@example.com</td><td>9123456780</td><td>Delhi</td><td>BCA</td><td>2026</td><td>45,000</td></tr>
+    </table>
+  </div>
+</body>
+</html>

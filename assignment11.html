@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 11 - Accessibility</title>
+  <style>
+    .skip-link { position: absolute; left: -999px; }
+    .skip-link:focus { left: 10px; top: 10px; background: #ffff99; padding: 6px; }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header>
+    <h1>Accessible Web Page</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#main-content">Home</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <h2 id="about">About Accessibility</h2>
+    <p>Accessible pages can be used by everyone, including people using screen readers.</p>
+    <img src="https://via.placeholder.com/300x150.png?text=Accessible" alt="Placeholder image showing the word Accessible" width="300">
+    <button type="button" aria-label="Close the message">X</button>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ABC College</p>
+  </footer>
+</body>
+</html>
